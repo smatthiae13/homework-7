@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">We Love-a The Trains-a</h1>
+                <p class="lead">Figure out your stops in the Bahnhof</p>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency(minutes)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results">
+                        <tr>
+                            <th scope="row">1</th>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Enter Train Information
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="">
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="first-train-time">First Train Time (HH:mm military time)</label>
+                            <input type="text" class="form-control" id="first-train-time" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="freq">Frequency(minutes)</label>
+                            <input type="text" class="form-control" id="freq" placeholder="">
+                        </div>
+                        <button type="button" class="btn btn-outline-dark" id="submit">Submit</button>
+                    </form>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+
+</body>
+
+</html>
