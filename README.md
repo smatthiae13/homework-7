@@ -1,5 +1,5 @@
 # homework-7
-Firebase Trains
+
 Firebase Trains is an app that allows users to create and update fictional trains. 
 The app then creates an arrival board that keeps track of the train schedules. 
 The Train Scheduler Application begins with a form that requests the train name, destination, first train time, and frequency. 
